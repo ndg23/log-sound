@@ -1,6 +1,6 @@
 {
   "name": "log-sound",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A powerful logging library with sound notifications",
   "main": "index.js",
   "types": "types/index.d.ts",
