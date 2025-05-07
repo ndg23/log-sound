@@ -84,6 +84,26 @@ const log = new SoundLog({
 });
 ```
 
+### Browser Usage
+
+When using in the browser, you'll need to provide sound URLs:
+
+```javascript
+const log = new SoundLog({
+  logLevels: {
+    error: '/sounds/error.mp3',
+    warn: '/sounds/warn.mp3',
+    // ...
+  }
+});
+
+// Usage remains the same
+log.info('Application started');
+log.warn('Low memory');
+```
+
+Note: Browser version uses the Web Audio API for sound playback.
+
 ## Contributing
 
 We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.

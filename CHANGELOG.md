@@ -42,5 +42,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - ✨ Interactive demo
 - 🧪 Comprehensive tests
 
+## [0.0.3] - 2025-05-07
+### Added
+- Browser support using Web Audio API
+- Separate browser bundle
+- Sound URL support for browser environments
+### Changed
+- Improved error handling for browser environments
+- Updated documentation with browser usage examples
+
 [0.0.2]: https://github.com/ndg23/log-sound/releases/tag/v0.0.2
-[0.0.1]: https://github.com/ndg23/log-sound/releases/tag/v0.0.1 
+[0.0.1]: https://github.com/ndg23/log-sound/releases/tag/v0.0.1
+[0.0.3]: https://github.com/ndg23/log-sound/releases/tag/v0.0.3 

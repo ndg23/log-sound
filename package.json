@@ -3,6 +3,7 @@
   "version": "0.0.3",
   "description": "A powerful logging library with sound notifications",
   "main": "index.js",
+  "browser": "browser.js",
   "types": "types/index.d.ts",
   "scripts": {
     "test": "mocha tests/*.js",
