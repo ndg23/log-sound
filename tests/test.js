@@ -1,7 +1,7 @@
 const assert = require('assert');
 const path = require('path');
 const fs = require('fs');
-const SoundLog = require('../error.js');
+const SoundLog = require('../index.js');
 
 // Increase max listeners to avoid warning
 process.setMaxListeners(20);

@@ -3,6 +3,8 @@
 A powerful and customizable logging library with sound notifications for Node.js applications.
 
 [![npm version](https://badge.fury.io/js/log-sound.svg)](https://badge.fury.io/js/log-sound)
+[![CI](https://github.com/ndg23/log-sound/workflows/CI/badge.svg)](https://github.com/ndg23/log-sound/actions)
+[![codecov](https://codecov.io/gh/ndg23/log-sound/branch/main/graph/badge.svg)](https://codecov.io/gh/ndg23/log-sound)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Features

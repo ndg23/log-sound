@@ -1,7 +1,7 @@
 // examples/demo.js - Example usage of the "log-sound" package
 // This file demonstrates how to use sounds for different error types
 
-const SoundLog = require('../error.js');
+const SoundLog = require('../index.js');
 const readline = require('readline');
 
 // Initialize logger
