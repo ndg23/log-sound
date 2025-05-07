@@ -9,8 +9,7 @@
     "test:watch": "mocha tests/*.js --watch",
     "demo": "node example/demo.js",
     "lint": "eslint .",
-    "format": "prettier --write .",
-    "prepare": "husky install"
+    "format": "prettier --write ."
   },
   "keywords": [
     "logging",
@@ -36,7 +35,6 @@
     "mocha": "^9.2.2",
     "eslint": "^8.0.0",
     "prettier": "^2.5.0",
-    "husky": "^7.0.0",
     "@types/node": "^16.0.0"
   },
   "engines": {
