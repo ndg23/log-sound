@@ -20,13 +20,15 @@ A powerful and customizable logging library with sound notifications for Node.js
 ## Installation
 
 ```bash
-npm install log-sound
+npm install log-sounds --save
+yarn add log-sounds
+pnpm add log-sounds
 ```
 
 ## Quick Start
 
 ```javascript
-const SoundLog = require('log-sound');
+const SoundLog = require('log-sounds');
 const log = new SoundLog();
 
 // Basic logging
