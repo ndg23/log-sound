@@ -4,12 +4,12 @@ class SoundLog {
       enabled: true,
       logLevels: {
         error: 'error.mp3',
-        warn: 'warn.mp3',
-        info: 'info.mp3',
-        debug: 'debug.mp3',
-        trace: 'trace.mp3',
+        warn: 'error-8.mp3',
+        info: 'error-12.mp3',
+        debug: 'error-8.mp3',
+        trace: 'error-8.mp3',
         success: 'success.mp3',
-        fatal: 'fatal.mp3',
+        fatal: 'error-10.mp3',
         custom: {}
       },
       errorMap: {

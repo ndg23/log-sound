@@ -64,7 +64,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - ✨ Interactive demo
 - 🧪 Comprehensive tests
 
+## [0.0.6] - 2025-05-07
+### Changed
+- Updated default sound mappings for better user experience:
+  - warn: now uses 'error-8.mp3'
+  - info: now uses 'error-12.mp3'
+  - debug: now uses 'error-8.mp3'
+  - trace: now uses 'error-8.mp3'
+  - fatal: now uses 'error-10.mp3'
+- Standardized sound naming convention
+- Improved sound organization
+
 [0.0.4]: https://github.com/ndg23/log-sounds/releases/tag/v0.0.4
 [0.0.3]: https://github.com/ndg23/log-sounds/releases/tag/v0.0.3
 [0.0.2]: https://github.com/ndg23/log-sounds/releases/tag/v0.0.2
-[0.0.1]: https://github.com/ndg23/log-sounds/releases/tag/v0.0.1 
+[0.0.1]: https://github.com/ndg23/log-sounds/releases/tag/v0.0.1
+[0.0.6]: https://github.com/ndg23/log-sounds/releases/tag/v0.0.6 
