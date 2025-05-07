@@ -119,11 +119,11 @@ describe('SoundLog', () => {
     });
 
     it('should handle multiple error types simultaneously', () => {
-      soundLog.mapErrorToSound('Error1', 'sound1.mp3');
-      soundLog.mapErrorToSound('Error2', 'sound2.mp3');
+      soundLog.mapErrorToSound('Error1', 'error-10.mp3');
+      soundLog.mapErrorToSound('Error2', 'error-12.mp3');
       
-      assert.strictEqual(soundLog.config.soundMap.Error1, 'sound1.mp3');
-      assert.strictEqual(soundLog.config.soundMap.Error2, 'sound2.mp3');
+      assert.strictEqual(soundLog.config.soundMap.Error1, 'error-10.mp3');
+      assert.strictEqual(soundLog.config.soundMap.Error2, 'error-12.mp3');
     });
 
     it('should handle invalid sound files gracefully', () => {
@@ -137,7 +137,7 @@ describe('SoundLog', () => {
         soundLog.playSound(null);
         soundLog.playSound(undefined);
         soundLog.playSound('');
-        soundLog.mapErrorToSound(null, 'sound.mp3');
+        soundLog.mapErrorToSound(null, 'error-10.mp3');
       });
     });
 
@@ -165,8 +165,8 @@ describe('SoundLog', () => {
       
       // Test with very long names
       const longName = 'A'.repeat(100);
-      soundLog.mapErrorToSound(longName, 'long.mp3');
-      assert.strictEqual(soundLog.config.soundMap[longName], 'long.mp3');
+      soundLog.mapErrorToSound(longName, 'success.mp3');
+      assert.strictEqual(soundLog.config.soundMap[longName], 'success.mp3');
     });
   });
 

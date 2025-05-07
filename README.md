@@ -113,3 +113,200 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 ## License
 
 MIT © [Anto]
+
+## Examples
+
+### Basic Node.js Usage
+
+```javascript
+const LogSound = require('log-sounds');
+
+const log = new LogSound({
+  soundsDir: './sounds', // Directory containing your sound files
+});
+
+// Basic logging with sounds
+log.info('Application started')
+   .debug('Loading configuration')
+   .warn('Disk space low')
+   .error('Connection failed')
+   .success('Operation completed')
+   .fatal('Critical error');
+
+// Error handling
+try {
+  throw new Error('Database connection failed');
+} catch (error) {
+  log.error('Failed to connect to database', error);
+}
+
+// Custom log levels
+log.addLogLevel('database', {
+  sound: 'db.mp3',
+  emoji: '🗄️',
+  color: '\x1b[35m'  // Magenta
+});
+
+log.database('Executing query...');
+```
+
+### Express.js Middleware
+
+```javascript
+const express = require('express');
+const LogSound = require('log-sounds');
+
+const app = express();
+const log = new LogSound();
+
+// Request logging middleware
+app.use((req, res, next) => {
+  log.info(`${req.method} ${req.url}`);
+  next();
+});
+
+// Error handling middleware
+app.use((err, req, res, next) => {
+  log.error('Server error:', err);
+  res.status(500).send('Something broke!');
+});
+
+app.get('/', (req, res) => {
+  log.debug('Processing request');
+  res.send('Hello World!');
+});
+
+app.listen(3000, () => {
+  log.success('Server started on port 3000');
+});
+```
+
+### React Component
+
+```javascript
+import LogSound from 'log-sounds';
+
+// Initialize once
+const log = new LogSound({
+  logLevels: {
+    error: '/sounds/error.mp3',
+    warn: '/sounds/warn.mp3',
+    info: '/sounds/info.mp3'
+  }
+});
+
+function UserProfile() {
+  useEffect(() => {
+    log.info('Component mounted');
+
+    fetchUserData()
+      .then(data => {
+        log.success('Data loaded successfully');
+      })
+      .catch(error => {
+        log.error('Failed to load user data', error);
+      });
+
+    return () => {
+      log.debug('Component unmounting');
+    };
+  }, []);
+
+  return <div>User Profile</div>;
+}
+```
+
+### Next.js Global Error Handling
+
+```javascript
+// pages/_app.js
+import LogSound from 'log-sounds';
+
+const log = new LogSound({
+  logLevels: {
+    error: '/public/sounds/error.mp3',
+    warn: '/public/sounds/warn.mp3',
+    info: '/public/sounds/info.mp3'
+  }
+});
+
+// Global error handler
+if (typeof window !== 'undefined') {
+  window.onerror = (message, source, lineno, colno, error) => {
+    log.error('Global error:', error);
+  };
+}
+
+export default function App({ Component, pageProps }) {
+  useEffect(() => {
+    log.info('App initialized');
+  }, []);
+
+  return <Component {...pageProps} />;
+}
+```
+
+### Browser Usage with CDN
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Log-Sounds Demo</title>
+  <script src="https://unpkg.com/log-sounds"></script>
+</head>
+<body>
+  <button onclick="testLogs()">Test Logs</button>
+
+  <script>
+    const log = new LogSound({
+      logLevels: {
+        error: '/sounds/error.mp3',
+        warn: '/sounds/warn.mp3',
+        info: '/sounds/info.mp3'
+      }
+    });
+
+    function testLogs() {
+      log.info('Starting test')
+         .warn('This is a warning')
+         .error('This is an error')
+         .success('Test completed');
+    }
+  </script>
+</body>
+</html>
+```
+
+### Custom Error Types
+
+```javascript
+const LogSound = require('log-sounds');
+const log = new LogSound();
+
+// Define custom errors
+class DatabaseError extends Error {
+  constructor(message) {
+    super(message);
+    this.name = 'DatabaseError';
+  }
+}
+
+class ValidationError extends Error {
+  constructor(message) {
+    super(message);
+    this.name = 'ValidationError';
+  }
+}
+
+// Map custom errors to specific sounds
+log.mapErrorToSound('DatabaseError', 'db-error.mp3');
+log.mapErrorToSound('ValidationError', 'validation-error.mp3');
+
+// Usage
+try {
+  throw new DatabaseError('Connection failed');
+} catch (error) {
+  log.error('Database operation failed', error);
+}
+```
