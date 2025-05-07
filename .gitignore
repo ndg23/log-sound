@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Build
+dist/
+build/
+*.tgz
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Testing
+coverage/
+.nyc_output/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Sound files (except defaults)
+sounds/*
+!sounds/default.mp3
+!sounds/error.mp3
+!sounds/warn.mp3
+!sounds/info.mp3
+!sounds/debug.mp3
+!sounds/trace.mp3
+!sounds/success.mp3
+!sounds/fatal.mp3 

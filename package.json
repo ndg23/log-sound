@@ -1,0 +1,45 @@
+{
+  "name": "sound-log",
+  "version": "0.0.1",
+  "description": "A powerful logging library with sound notifications",
+  "main": "error.js",
+  "types": "types/index.d.ts",
+  "scripts": {
+    "test": "mocha tests/*.js",
+    "test:watch": "mocha tests/*.js --watch",
+    "demo": "node example/demo.js",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "logging",
+    "sound",
+    "notification",
+    "debug",
+    "error-handling",
+    "developer-tools",
+    "console",
+    "sound-effects"
+  ],
+  "author": "Anto Ndong",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/username/sound-log.git"
+  },
+  "bugs": {
+    "url": "https://github.com/username/sound-log/issues"
+  },
+  "homepage": "https://github.com/username/sound-log#readme",
+  "devDependencies": {
+    "mocha": "^9.2.2",
+    "eslint": "^8.0.0",
+    "prettier": "^2.5.0",
+    "husky": "^7.0.0",
+    "@types/node": "^16.0.0"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}

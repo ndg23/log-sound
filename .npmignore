@@ -1,0 +1,30 @@
+# Source control
+.git/
+.gitignore
+.github/
+
+# Development
+tests/
+examples/
+docs/
+coverage/
+.nyc_output/
+.eslintrc
+.prettierrc
+.editorconfig
+CONTRIBUTING.md
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+
+# Build
+*.tgz
+
+# Logs
+logs/
+*.log
+
+# Environment
+.env* 
