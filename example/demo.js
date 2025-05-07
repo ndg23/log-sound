@@ -1,4 +1,4 @@
-// examples/demo.js - Example usage of the "sound-log" package
+// examples/demo.js - Example usage of the "log-sound" package
 // This file demonstrates how to use sounds for different error types
 
 const SoundLog = require('../error.js');
@@ -138,7 +138,7 @@ const demoOptions = {
 // Show menu and handle selection
 function showMenu() {
   console.clear();
-  console.log("📢 Sound-Log Demonstration");
+  console.log("📢 log-sound Demonstration");
   console.log("========================\n");
   console.log("Choose an error to trigger:");
   
@@ -153,7 +153,7 @@ function showMenu() {
 // Handle user selection
 function handleSelection(choice) {
   if (choice === '0') {
-    console.log("\n👋 Thanks for trying Sound-Log!");
+    console.log("\n👋 Thanks for trying log-sound!");
     rl.close();
     return;
   }
@@ -188,6 +188,6 @@ function runDemo() {
 }
 
 // Start the demo
-console.log("\n🎵 Welcome to Sound-Log Demo!");
+console.log("\n🎵 Welcome to log-sound Demo!");
 console.log("📝 Try different error types and hear their sounds\n");
 runDemo();

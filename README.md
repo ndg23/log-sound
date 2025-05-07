@@ -1,8 +1,8 @@
-# 🔊 sound-log
+# 🔊 log-sound
 
 A powerful and customizable logging library with sound notifications for Node.js applications.
 
-[![npm version](https://badge.fury.io/js/sound-log.svg)](https://badge.fury.io/js/sound-log)
+[![npm version](https://badge.fury.io/js/log-sound.svg)](https://badge.fury.io/js/log-sound)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Features
@@ -18,13 +18,13 @@ A powerful and customizable logging library with sound notifications for Node.js
 ## Installation
 
 ```bash
-npm install sound-log
+npm install log-sound
 ```
 
 ## Quick Start
 
 ```javascript
-const SoundLog = require('sound-log');
+const SoundLog = require('log-sound');
 const log = new SoundLog();
 
 // Basic logging

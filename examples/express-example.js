@@ -1,5 +1,5 @@
 const express = require('express');
-const SoundLog = require('sound-log');
+const SoundLog = require('log-sound');
 
 const app = express();
 const soundLog = new SoundLog();

@@ -1,4 +1,4 @@
-const SoundLog = require('sound-log');
+const SoundLog = require('log-sound');
 const log = new SoundLog();
 
 // Ajouter des niveaux personnalisés

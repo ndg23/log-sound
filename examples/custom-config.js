@@ -1,4 +1,4 @@
-const SoundLog = require('sound-log');
+const SoundLog = require('log-sound');
 
 // Advanced configuration
 const soundLog = new SoundLog({

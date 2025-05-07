@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+
+## [0.0.2] - 2025-05-07
+### Added
+- Added a new log level: `http`
+- Added a new method: `http`
+- Added a new method: `success`
+- Added a new method: `fatal`
+- Added a new method: `custom`
+
+
 ## [0.0.1] - 2025-05-06
 ### Added
 - Initial release 🎉
@@ -32,4 +42,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - ✨ Interactive demo
 - 🧪 Comprehensive tests
 
-[0.0.1]: https://github.com/ndg23/sound-log/releases/tag/v0.0.1 
+[0.0.1]: https://github.com/ndg23/log-sound/releases/tag/v0.0.1 

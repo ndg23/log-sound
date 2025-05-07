@@ -1,4 +1,4 @@
-import SoundLog from 'sound-log';
+import SoundLog from 'log-sound';
 
 const soundLog = new SoundLog({
   soundsDir: '/assets/sounds'

@@ -1,6 +1,6 @@
-# Contributing to sound-log
+# Contributing to log-sound
 
-We love your input! We want to make contributing to sound-log as easy and transparent as possible.
+We love your input! We want to make contributing to log-sound as easy and transparent as possible.
 
 ## Development Process
 
@@ -14,7 +14,7 @@ We love your input! We want to make contributing to sound-log as easy and transp
 ## Project Structure
 
 ```
-sound-log/
+log-sound/
 ├── sounds/          # Default sound files
 ├── examples/        # Usage examples
 ├── tests/          # Test files

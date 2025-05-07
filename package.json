@@ -1,5 +1,5 @@
 {
-  "name": "sound-log",
+  "name": "log-sound",
   "version": "0.0.1",
   "description": "A powerful logging library with sound notifications",
   "main": "error.js",
@@ -26,12 +26,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/username/sound-log.git"
+    "url": "https://github.com/username/log-sound.git"
   },
   "bugs": {
-    "url": "https://github.com/username/sound-log/issues"
+    "url": "https://github.com/username/log-sound/issues"
   },
-  "homepage": "https://github.com/username/sound-log#readme",
+  "homepage": "https://github.com/username/log-sound#readme",
   "devDependencies": {
     "mocha": "^9.2.2",
     "eslint": "^8.0.0",

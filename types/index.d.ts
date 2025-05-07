@@ -1,4 +1,4 @@
-declare module 'sound-log' {
+declare module 'log-sound' {
   interface LogOptions {
     enabled?: boolean;
     soundsDir?: string;
